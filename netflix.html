@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <style>
+        *{
+            margin: 0; /*deixa todos os elementos sem margem*/
+            padding: 0; /*deixa todos os elementos sem padding*/
+        }
+        body{
+            background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/5eab1b22-c5ea-48b0-8ef4-862b3fa6df2c/d1cacd76-d563-493b-9021-719793fcdbcc/BR-pt-20230724-popsignuptwoweeks-perspective_alpha_website_small.jpg);
+            background-size: cover;
+            background-position: top center;
+        }
+        #heading{
+            background: rgba(0,0,0, 0.7); /*red, green, blue, alfa, o alfa mexe na opacidade*/
+        }
+        #heading div{
+            width: 90%;
+            display: flex;
+            justify-content: space-between; /*deixa uma heading de uma lado e outra no outro*/
+            margin-top: 0;
+            margin-bottom: 0;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #heading .h1{
+            padding-top: 15px;
+            padding-left: 15px;
+            padding-bottom: 15px;
+            font-size: 20px; /*define o tamanho de 20px pro h1 da heading*/
+            text-transform: uppercase; /*deixa os h1 da heading em maiusculo*/
+        }
+        #heading a{ /*como o h1 da heading possui um a href, a mudança de cor e fonte eh feita por ele*/
+            color: #fff; /*muda a cor do texto*/
+            text-decoration: none; /*remove a linha que sublibnha o link*/
+            font-family: sans-serif; /*muda a fonte*/
+        }
+    </style>
+</head>
+<body>
+    <header id="heading">
+        <div>
+        <h1 class="h1">
+            <a href="#"> Netflix </a>
+        </h1>
+
+        <h2 class="h1">
+            <a href="#"> Netflix </a>
+        </h2>
+    </div>
+    </header>
+</body>
+</html>
