@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            Tags
+        </title>
+    </head>
+    <body>
+
+        <h1 style="background: pink;"> <!--toda tag pode receber um style-->
+            Cabeçalho
+        </h1>
+
+        <p>
+
+            <b> <!--tag b deixa em negrito-->
+                Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit. Blanditiis eum fugit 
+                illum repellendus autem totam porro 
+                beatae fugiat, assumenda illo natus 
+                rerum reprehenderit at unde esse quasi 
+                tempore aliquam quo.
+            </b><br>
+
+            <strong> <!--tag strong, visualmente igual a tag b, usado pra deixar algum texto mais forte, util para leitores de tela-->
+                Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit. Nobis eligendi 
+                accusantium sequi illo et eaque fugiat 
+                neque blanditiis, odio nihil distinctio 
+                iure facere tempora placeat iusto vitae 
+                asperiores commodi dignissimos?
+            </strong><br>
+
+            <i> <!--deixa o texto em italico-->
+                Lorem ipsum dolor, sit amet consectetur 
+                adipisicing elit. Perspiciatis aliquid et 
+                esse voluptate aperiam nisi libero laudantium 
+                dolorem dolorum, qui maiores consequatur! 
+                Necessitatibus quo possimus fugiat nesciunt 
+                placeat natus a.
+            </i><br>
+
+            <em> <!--da enfase para um texto, deixando o texto em italido-->
+                Lorem <a href="https://youtu.be/woKq2sD8xho" target='_blank'>ipsum</a> <!--tag a href adiciona um link-->
+                dolor sit amet consectetur 
+                adipisicing elit. Ad illo explicabo 
+                expedita minima earum molestias placeat 
+                unde, velit assumenda, accusantium, 
+                enim eos rem recusandae tempora consequatur? 
+                Error rem aperiam provident?
+            </em>
+
+            <img src="https://www.vhv.rs/dpng/d/451-4511469_mina-twice-tt-photoshoot-hd-png-download.png" 
+            alt="Mina do twice na era TT" width="300"> <!--tag img adiciona uma imagem,
+            src contem o link da imagem e alt contem um texto para descrever
+            a imagem, width eh a largura da imagem-->
+
+            <a href="https://youtu.be/8A2t_tAjMz8"
+            target="_blank">
+
+                <img class="img-twice" src="https://akamai.sscdn.co/uploadfile/letras/albuns/a/b/8/d/565681487683609.jpg"
+                alt="twice knock knock">
+
+            </a>
+
+            <span class="vermelho">Lorem</span> <del>mimosa</del> 
+            <ins>misamo</ins>ipsum dolor sit amet consectetur 
+            <s>adipisicing</s> <u>elit</u>. Porro quos eos quam 
+            voluptatem eum fuga quae eius, <div class="vermelho">teste</div>
+            voluptatibus odio sequi 2<sup>2</sup>H<sub>2</sub>Obeatae 
+            aut <q>alias</q> quod, odit nemo tenetur <small>twicee</small>
+            <!--span serve pra criar classe em linha-->
+            <!--div parece com span mas ela nao eh em linha-->
+            <!--o del risca uma palavra e o ins sublinha a palavra, como
+            se fosse uma correção-->
+            <!--a tag s risca a palavra e a tag u sublinha a palavra-->
+            <!--tag sup para uma palavra ficar em cima e tag sub para
+            uma palavra ficar embaixo-->    
+            <!--tag q usada para citações, deixa o texto em aspas-->
+
+            <q cite="https://pt.wikipedia.org/wiki/Twice">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Maxime reiciendis consequuntur incidunt nulla sequi, 
+                tempora at tenetur, quibusdam molestiae quasi repellat 
+                reprehenderit sint in cupiditate totam iure obcaecati 
+                nesciunt facere!
+            </q>
+            <!--q cite serve pra citar algo-->
+        </p>
+
+        <blockquote cite="https://pt.wikipedia.org/wiki/Twice">
+            twice
+        </blockquote>
+        <!--blockquote serve para citar algo formalmente, ja formatado padrao,
+        ele nao pode vir dentro da tag p, mas pode ter uma tag p dentro dele-->
+        
+        <hr> <!--cria uma linha para separar informações-->
+
+        <blockquote cite="https://pt.wikipedia.org/wiki/Twice">
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing 
+                elit. Facere itaque debitis nulla quos. Laborum 
+                similique, dolor fugiat repudiandae, sed porro at 
+                sint vitae alias, animi dolores ratione tenetur. A, ea.
+            </p>
+
+        </blockquote>
+
+        <pre>
+
+            <code>
+                void create(Fila *f, int n){
+                    f->dados=malloc(n*sizeof(int));
+                    f->maxsize=n;
+                    f->fim=-1;
+                    f->comeco=0;
+                }                
+            </code> <!--tag code serve pra formatar um codigo-->
+
+        </pre> <!-- tag pre mantem o espaçamento como está no codigo-->
+
+        <style> /*eh possivel mudar o tamanho das imgs no css pelo style*/
+            .img-twice{
+                width: 300px;
+                height: 300px;
+            }
+            .vermelho{
+                font-size: 24px;
+                color:red;
+            }
+        </style>
+
+    </body>
+</html>
