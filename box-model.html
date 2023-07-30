@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+
+    <style>
+        .section1{
+            background: deeppink; /*cor de fundo do content edge*/
+            background-image: url(https://s2.glbimg.com/SZu725rDvthoIdNEfS4CfsSbhqg=/top/e.glbimg.com/og/ed/f/original/2021/05/15/image_BrLpAYi.png);
+            /*background-image coloca uma imagem no fundo do content edge*/
+            background-position: center; /*ajusta a posição da imagem pro centro*/
+            background-size: cover; /*ajusta o tamanho da imagem pro tamanho do content*/
+            width: 200px; /*largura do content edge*/
+            margin: 30px; /*empurra o conteudo dos outros*/
+            border: 5px solid black; /*border edge, solid eh uma linha direta*/
+            padding: 15px; /*padding eh como se fosse uma margem entre o content e a border*/
+        }
+        .section2{
+            background: cyan;
+            width: 200px; /*largura do content edge*/
+            margin: 20px; /*empurra o conteudo dos outros*/
+            border: 1px solid black; /*border edge, solid eh uma linha direta*/
+            padding: 150px 0 0 0; /*topo, direita, baixo, esquerda*/
+            border-bottom-width: 10px;
+            border-bottom-color: violet;
+            border-bottom-style: solid;
+        }
+        .section1,
+        .section2{
+            box-sizing: border-box; /*o tamanho do content eh calculado pelo tamanho do padding e da border*/
+            /*usado para sabermos o tamanho exato do elemento na tela*/
+        }
+    </style>
+</head>
+
+<body>
+    <section class="section1">
+        Lorem ipsum dolor sit, amet consectetur 
+        adipisicing elit. Ipsa ab, laboriosam 
+        quibusdam doloribus consectetur maiores 
+        natus earum incidunt ipsam asperiores 
+        dolorum odit nihil hic esse inventore. 
+        Temporibus ducimus consectetur eaque.
+    </section>
+    <section class="section2">
+        2
+    </section>
+</body>
+</html>
