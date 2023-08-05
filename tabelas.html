@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+        table td, table th{
+            border: 1px solid #ccc;
+            padding: 5px;
+            text-align: left;
+        }
+        table{
+            border-collapse: collapse; /*deixa as colunas unidas*/
+            width: 800%;
+        }
+        table caption{
+            caption-side: bottom;
+            text-align: left;
+            font-style: italic;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        tfoot td, table th{
+            background: #ffd4d4;
+        }
+        tfoot td{
+            font-style: italic;
+        }
+        .table{
+            width: 100%;
+            overflow: auto; /*overflow é o conteudo que fica maior que o tamanho da tela*/
+            /*usando o overflow auto a pessoa consegue rolar a tela so na parte da tabela*/
+        }
+    </style>
+</head>
+<body>
+    <p>
+        nayeon jeongyeon sana jihyo mina dahyun chaeyoung tzuyu
+    </p>
+    <div class="table">
+    <table>
+        <caption>
+            meninas do twice
+        </caption>
+        <thead> <!--cabeçalho da tabela-->
+            <tr> <!--linha-->
+                <th> <!--coluna-->
+                    Twice
+                </th>
+                <th> <!--coluna-->
+                    Twice
+                </th>
+                <th> <!--coluna-->
+                    Twice
+                </th>
+            </tr>
+        </thead>
+        <tbody> <!--corpo da tabela-->
+            <tr> <!--linha-->
+                <td colspan="2"
+                rowspan="2"> <!--coluna--> 
+                <!--colspan coluna ocupa quantas colunas-->
+                <!--rowspan coluna ocupa quantas linhas-->
+                    Nayeon Jeongyeon
+                </td>
+                <td> <!--coluna-->
+                    Momo
+                </td>
+            </tr>
+            <tr> <!--linha-->
+                </td>
+                <td> <!--coluna-->
+                    Sana Jihyo Mina
+                </td>
+            </tr>
+            <tr> <!--linha-->
+                <td> <!--coluna-->
+                    Dahyun
+                </td>
+                <td> <!--coluna-->
+                    Chaeyoung
+                </td>
+                <td> <!--coluna-->
+                    Tzuyu
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td> <!--coluna-->
+                    TT
+                </td>
+                <td> <!--coluna-->
+                    Knock Knock
+                </td>
+                <td> <!--coluna-->
+                    More and More
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+    </div>
+</body>
+</html>
