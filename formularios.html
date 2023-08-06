@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+        label{
+            cursor: pointer; /*label fica clicável*/
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="get" target="_blank" autocomplete="off"> 
+    <!--unica coisa q nao pode ficar dentro de um form eh outro form-->
+    <!--action diz pra onde o formulario será enviado, pode ser uma url-->
+    <!--target serve para enviar o formulario-->
+        <p>
+            Formulário
+        </p>
+        <p>
+            <label for="nome">
+                Nome:
+            </label>
+            <input type="text" id="nome" name="nome" 
+            placeholder="Seu nome" required> 
+            <!--name eh um identificador do input para o back end-->
+            <!--required: o campo deve ser preenchido-->
+        </p>
+        <p>
+            <label for="twice">
+                Gosta do twice?
+            </label>
+            <input type="checkbox" id="twice" name="twice" value="sim"> 
+            <!--se a pessoa marca o checkbox siginifica no back end que ela gosta do twice-->
+        </p>
+        <p>
+            <label for="twice2">
+                Gosta do twice?
+            </label>
+            <input type="checkbox" id="twice2" name="twice2" value="sim"> 
+            <!--se a pessoa marca o checkbox siginifica no back end que ela gosta do twice-->
+        </p>
+        <p>
+            <label for="twice3">
+                Gosta do twice?
+            </label>
+            <input type="checkbox" id="twice3" name="twice3" value="sim"> 
+            <!--se a pessoa marca o checkbox siginifica no back end que ela gosta do twice-->
+        </p>
+        <p>
+            Gênero:<br>
+            <label for="feminino">
+                feminino
+            </label>
+            <input type="radio" id="feminino" name="genero"
+            value="feminino"><br>
+            <label for="masculino">
+                masculino
+            </label>
+            <input type="radio" id="masculino" name="genero"
+            value="masculino">
+        </p>
+        <p>
+            <label for="data">
+                Data:
+            </label>
+            <input type="date" id="data" name="data">
+        </p>
+        <p>
+            <label for="datetime">
+                Date Time:
+            </label>
+            <input type="datetime-local" id="datetime" name="datetime">
+        </p>
+        <p>
+            <label for="time">
+                Time:
+            </label>
+            <input type="time" id="time" name="time">
+        </p>
+        <p>
+            <label for="cor">
+                Cor:
+            </label>
+            <input type="color" id="cor" name="cor">
+        </p>
+        <p>
+            <label for="email">
+                Email:
+            </label>
+            <input type="email" id="email" name="email" 
+            placeholder="email@email.com">
+        </p>
+        <p>
+            <label for="foto">
+                Foto de Perfil:
+            </label>
+            <input type="file" id="foto" name="foto" accept=".png">
+        </p>
+        <p>
+            <label for="numero">
+                Numero:
+            </label>
+            <input type="number" id="numero" name="numero"
+            min="10" max="50">
+        </p>
+        <p>
+            <label for="senha">
+                Senha:
+            </label>
+            <input type="password" id="senha" name="senha"
+            placeholder="Digite sua senha">
+        </p>
+        <p>
+            <label for="range">
+                Range:
+            </label>
+            <input type="range" id="range" name="range">
+        </p>
+        <p>
+            <label for="url">
+                URL:
+            </label>
+            <input type="url" id="url" name="url">
+        </p>
+        <p>
+            <label for="search">
+                Search:
+            </label>
+            <input type="search" id="search" name="search">
+        </p>
+        <p>
+            <label for="select">
+                Select:
+            </label>
+            <select id="select" name="select">
+                <option value="opção1" label="opção1"></option>
+                <option value="opção2" label="opção2"></option>
+                <option value="opção3" label="opção3"></option>
+            </select>
+        </p>
+        <p>
+            <label for="textarea">
+                Textarea:
+            </label>
+            <textarea id="textarea" name="textarea"></textarea>
+        </p>
+        <p>
+            <button type="submit"> <!--enviar o formulário-->
+                Enviar
+            </button>
+            <button type="reset"> <!--reseta informações-->
+                Resetar
+            </button>
+        </p>
+    </form>
+</body>
+</html>
