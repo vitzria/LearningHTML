@@ -1,0 +1,16 @@
+.pai{ /*tbm seleciona a filha devido a herança*/
+    color:red;
+}
+div{
+    color: initial;
+    margin-left: 20px;
+}
+.pai.filha{ /*quando as classes estaojuntas o elemento precisa ter as duas classes*/
+    color:aqua;
+}
+.pai .filha{ /*seleciona a classe filha dentro da classe pai*/
+    color:blueviolet;
+}
+.pai>.filha{ /*seleciona a classe filha que for filha direta da classe pai*/
+    font-style: italic;
+}
