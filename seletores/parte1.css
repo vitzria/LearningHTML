@@ -1,0 +1,24 @@
+*{ /*seleciona todos os elementos*/
+    margin: 0;
+    padding: 0;
+}
+p{ /*seleciona uma tag, aplicado a todos os paragrafos*/
+    color: rgb(21, 228, 255);
+}
+body div section{ /*seleciona a section que está em uma div que está em um body*/
+    color:rgb(255, 27, 65);
+}
+body div section h1,
+body div section p{ /*seleciona a body div section h1 e a body div section p*/
+    background: rgb(255, 237, 237);
+}
+.heading{ /*seleciona uma classe*/
+    color: lightcoral;
+}
+.heading h2{ /*seleciona os h2 dentro da classe heading*/
+    font-style: italic;
+}
+.teste h2.heading{ /*seleciona o h2 dentro da heading dentro do teste*/
+    font-style: oblique;
+    color:purple;
+}
