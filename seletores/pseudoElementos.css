@@ -1,0 +1,23 @@
+ul li::after{ /*adiciona um elemento após os li das ul*/
+    content: ' - ';
+} /*o before adiciona antes*/
+p{
+    font-size: 24px;
+}
+p::first-line{ /*seleciona a primeira linha*/
+    background-color: deeppink;
+    color: white;
+}
+p::first-letter{ /*seleciona a primeira letra do p*/
+    font-size: 150px;
+    float: left;
+    display: block;
+    margin: 0 10px 10px 0;
+    color: black;
+}
+p::selection{ /*seleciona oq está sendo selecionado pelo usuário*/
+    background: pink;
+}
+::placeholder{ /*seleciona o placeholder*/
+    color:deeppink;
+}
