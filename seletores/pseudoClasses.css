@@ -1,0 +1,35 @@
+.heading{
+    transition: all 600ms ease-in-out; /*faz uma transição*/
+}
+.heading:hover{ /*hover: quando o mouse está sobre o elemento*/
+    background: red;
+}
+a:visited{ /*link que ja foi visitado*/
+    color:deeppink;
+}
+a:link{ /*link que nunca foi visitado*/
+    color:aqua;
+}
+a:hover{ /*quando o mouse está sobre o elemento*/
+    color:white;
+    background: darkslateblue;
+    text-decoration: none;
+}
+a:active{ /*quando o elemento está ativo, sendo clicado*/
+    color:white;
+    background: darkmagenta;
+    text-decoration: none;
+}
+input:focus{ /*quando o input está sendo usado*/
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /*coloca sombra*/
+    outline: none;
+}
+input:disabled{ /*quando um input está desabilitado*/
+    cursor: not-allowed; /*muda o cursor, fica bloqueado*/
+}
+input:checked + p{ /*quando o checkbox está checkado, muda o p que está após ele*/
+    background: pink;
+}
+.pai .lista li:first-child{ /*seleciona o primeiro li que está dentro da classe lista que estão dentro da classe pai*/
+    background: pink;
+} /*last-child seleciona o ultimo li*/
