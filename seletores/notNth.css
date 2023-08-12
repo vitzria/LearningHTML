@@ -1,0 +1,22 @@
+p:not(.meio){ /*seleciona todos os paragrafos, menos o que tem a classe meio*/
+    color: deeppink;
+}
+input:not(:checked)+p{ /*seleciona o p após o input que nao estiver checkado*/
+    color: darkmagenta;
+}
+ul li:nth-child(even){ /*seleciona os pares do item de uma lista ul*/
+    background-color: coral;
+}
+ul li:nth-child(odd){ /*seleciona os impares do item de uma lista ul*/
+    background-color: deepskyblue;
+}
+ul li:nth-child(2){ /*seleciona o indice 2 do item de uma lista ul*/
+    background-color: rebeccapurple;
+}
+ul li:nth-child(5n){ /*seleciona de 5 em 5 do item de uma lista ul*/
+    font-style: italic;
+    font-size: 24px;
+}
+ul li:nth-child(3n+4){ /*começando do 4 li seleciona de 3 em 3*/
+    font-size:30px;
+}
