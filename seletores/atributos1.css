@@ -1,0 +1,9 @@
+.pai h1+p{ /*seleciona o primeiro p que vem dps de um h1 da classe pai*/
+    color:red;
+}
+.pai h1~p{ /*seleciona todos os p que vem dps de um h1 da classe pai*/
+    font-style: italic;
+}
+[meu-atributo]{
+    color:blue;
+}
