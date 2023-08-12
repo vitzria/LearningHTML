@@ -1,0 +1,13 @@
+[meu-atributo~="valor1"]{ /*seleciona se tiver pelo menos o valor1*/
+    color:blue;
+}
+[meu-atributo|="qualquercoisa"]{ /*seleciona se o valor for qualquer coisa
+seguido de um traço*/
+    color:red;
+}
+[meu-atributo^="valor"]{ /*seleciona se o valor começa com valor*/
+    font-style: italic;
+}
+[meu-atributo$="3"]{ /*seleciona os que terminam com 3*/
+    font-family: sans-serif;
+}
