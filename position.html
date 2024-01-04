@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin:0;
+    }
+    .pai{
+        height: 300vh;
+    }
+    .filha1, .filha2, .filha3{
+        width: 300px;
+        height:300px;
+        margin: 10px;
+        background:pink;
+        position:static; /* elemento nao muda de lugar */
+    }
+    .filha2{
+        position: absolute;
+        background-color: greenyellow;
+        z-index: 1; /*camada 1*/
+    }
+    .filha1{
+        position: absolute; /*o elemento muda de lugar sem q os outros elementos mudem também*/
+        top: 50%;
+        margin-top: -150px;
+        left: 50%;
+        margin-left: -150px;
+        z-index: 2; /*camada 2*/
+    }
+    .filha3{
+        position:fixed; /*fica fixado na tela, independente se rolar o mouse*/
+        background: plum;
+        width: 100px;
+        height: 100px;
+    }
+    ul{
+        height: 100px;
+        overflow-y: auto;
+    }
+    ul li.sticky{
+        position: sticky;
+        background: pink;
+        top:0;
+    }
+</style>
+<body>
+   <div class="pai">
+    <div class="filha1"></div>
+    <div class="filha2"></div>
+    <div class="filha3"></div>
+    <p>
+        Lorem ipsum dolor sit amet consectetur 
+        adipisicing elit. Illum cum voluptatem, 
+        at veritatis dolor velit vero id incidunt 
+        eaque totam quo, placeat ad veniam, est 
+        minima dolorum sapiente animi quibusdam?
+    </p>
+   </div>
+   <div>
+        <ul>
+            <li class="sticky">A</li>
+            <li>a</li>
+            <li>a</li>
+            <li>a</li>
+            <li>a</li>
+            <li>a</li>
+            <li>a</li>
+            <li>a</li>
+            <li>a</li>
+            <li>a</li>
+            <li>a</li>
+            <li>a</li>
+            <li>a</li>
+            <li>a</li>
+            <li>a</li>
+            <li>a</li>
+            <li>a</li>
+            <li class="sticky">B</li>
+            <li>b</li>
+            <li>b</li>
+            <li>b</li>
+            <li>b</li>
+            <li>b</li>
+            <li>b</li>
+            <li>b</li>
+            <li>b</li>
+            <li>b</li>
+            <li>b</li>
+            <li>b</li>
+            <li>b</li>
+            <li>b</li>
+            <li>b</li>
+        </ul>
+   </div>
+</body>
+</html>
